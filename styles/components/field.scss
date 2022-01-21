@@ -1,0 +1,114 @@
+.mail-group {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 32px;
+
+  &.-lg {
+    margin-bottom: 48px;
+  }
+}
+
+.mail-label {
+  display: block;
+  font-size: 12px;
+  color: $color-grey-400;
+  margin-bottom: 10px;
+  line-height: 1;
+
+  &.-inline-block {
+    margin-right: 4px;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+}
+
+.mail-field {
+  display: block;
+  font-size: 12px;
+  line-height: 1;
+  color: $color-grey-600;
+
+  &.-medium {
+    color: $color-grey-700;
+    font-weight: 500;
+  }
+
+  &.-bold {
+    color: $color-grey-800;
+    font-weight: 700;
+  }
+
+  &.-primary {
+    color: $color-brand;
+  }
+
+  &.-sm {
+    font-size: 11px;
+  }
+
+  &.-md {
+    font-size: 14px;
+  }
+
+  &.-lg {
+    font-size: 18px;
+  }
+
+  &.-xl {
+    font-size: 22px;
+  }
+}
+
+.mail-field-help {
+  display: inline-block;
+  font-size: 11px;
+  color: $color-grey-400;
+  line-height: 1;
+  margin-top: 8px;
+  font-style: normal;
+
+  &.-marginless {
+    margin-top: 0;
+  }
+
+  &.-margin\:sm {
+    margin-top: 4px;
+  }
+
+  &.-anchor {
+    color: $color-blue-600;
+    text-decoration: none;
+  }
+}
+
+.mail-field-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+}
+
+.mail-field-text {
+  font-size: 14px;
+  color: #5b6067;
+  line-height: 1.4;
+  margin: 0;
+
+  &.-sm {
+    font-size: 12px;
+  }
+}
+
+.mail-help {
+  display: block;
+  font-weight: 400;
+  color: $color-grey-400;
+  font-size: 11px;
+  margin-top: 6px;
+  line-height: 1;
+  font-style: italic;
+
+  &.-spaced {
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+}

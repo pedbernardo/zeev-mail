@@ -1,0 +1,36 @@
+.mail-tag {
+  background-color: $color-grey-100;
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: $color-grey-600;
+
+  &.-blue {
+    background-color: $color-blue-0;
+    color: $color-blue-600;
+  }
+
+  &.-green {
+    background-color: $color-green-0;
+    color: $color-green-600;
+  }
+
+  &.-red {
+    background-color: $color-red-0;
+    color: $color-red-600;
+  }
+
+  &.-yellow {
+    background-color: $color-yellow-0;
+    color: $color-yellow-600;
+  }
+
+  &.-nowrap {
+    max-width: 132px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

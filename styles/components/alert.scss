@@ -1,0 +1,54 @@
+.mail-alert {
+  display: inline-block;
+  margin: 12px 0;
+  width: 100%;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 4px;
+  color: $color-grey-800;
+  background-color: $color-grey-0;
+  font-weight: 500;
+  box-sizing: content-box;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &.-blue {
+    color: $color-blue-700;
+    background-color: $color-blue-0;
+    border: 1px solid $color-blue-100;
+  }
+
+  &.-green {
+    color: $color-green-700;
+    background-color: $color-green-0;
+    border: 1px solid $color-green-100;
+  }
+
+  &.-yellow {
+    color: $color-yellow-700;
+    background-color: $color-yellow-0;
+    border: 1px solid $color-yellow-100;
+  }
+
+  &.-red {
+    color: $color-red-700;
+    background-color: $color-red-0;
+    border: 1px solid $color-red-100;
+  }
+
+  &.-marginless-top {
+    margin-top: 0;
+  }
+
+  &.-marginless-bottom {
+    margin-bottom: 0;
+  }
+
+  &.-marginless {
+    margin: 0;
+  }
+}

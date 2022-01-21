@@ -1,0 +1,26 @@
+.mail-card {
+  border: $border-grey-light;
+  border-radius: $border-radius-lg;
+
+  &.-success {
+    border-color: $color-green-200;
+    border-width: 3px;
+  }
+
+  &.-warning {
+    border-color: $color-yellow-200;
+    border-width: 3px;
+  }
+
+  &.-danger {
+    border-color: $color-red-200;
+    border-width: 3px;
+  }
+}
+
+.mail-card-footer {
+  padding: $space-5;
+  background-color: $color-grey-0;
+  border-top: $border-grey-light;
+  border-radius: 0 0 $border-radius-lg $border-radius-lg;
+}

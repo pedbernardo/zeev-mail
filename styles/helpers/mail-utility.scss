@@ -1,0 +1,27 @@
+@each $sizeName, $size in $sizes {
+  @each $dir in $directions {
+    .u-padding-#{$dir}-#{$sizeName} {
+      padding-#{$dir}: $size !important;
+    }
+  }
+}
+
+.u-border {
+  border: $border-grey-light;
+}
+
+.u-border-left {
+  border-left: $border-grey-light;
+}
+
+.u-border-right {
+  border-right: $border-grey-light;
+}
+
+.u-border-top {
+  border-top: $border-grey-light;
+}
+
+.u-border-bottom {
+  border-bottom: $border-grey-light;
+}
