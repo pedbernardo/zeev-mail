@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <title>Emails | Zeev Mail</title>
+</head>
+<style>
+  *, *:after, *:before {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f7;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+
+  .zeev-mail-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .zeev-mail-list-item {
+    margin: 6px 0;
+  }
+
+  .zeev-mail-list-item a {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    color: #1787e8;
+    padding: 10px 14px;
+    border-radius: 6px;
+    line-height: 16px;
+  }
+
+  .zeev-mail-list-item a:before {
+    content: '✉️';
+    padding-right: 6px;
+    position: relative;
+    top: -1px;
+    transition: top .2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+
+  .zeev-mail-list-item a:hover {
+    background-color: #e9eaec;
+    color: #0d528e;
+  }
+
+  .zeev-mail-list-item a:hover:before {
+    content: '📩';
+    top: -6px;
+  }
+</style>
+<body>
+  <div style="margin-top: 24px; margin-bottom: 24px; font-family: Roboto, Arial, Helvetica, sans-serif; text-align: center;">
+    <h1
+      style="font-size: 24px; color: #212224; margin-bottom: 0; line-height: 1;"
+    >🕵️ Email Preview</h1>
+    <p
+      style="font-size: 14px; font-weight: 300; color: #8e9196; margin: 10px 0 32px 0;"
+    >
+      Verifique em tempo real seu template de e-mail do <strong>Zeev</strong>
+    </p>
+  </div>
+
+  <ul class="zeev-mail-list" id="nav">
+  </ul>
+</body>
+</html>
