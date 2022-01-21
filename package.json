@@ -47,18 +47,18 @@
     "eslint-plugin-promise": "4.2.1",
     "husky": "^7.0.4",
     "jest": "^27.4.7",
-    "juice": "^8.0.0",
     "lint-staged": "^12.1.7",
     "live-server": "^1.2.1",
     "npm-run-all": "^4.1.5",
-    "posthtml": "^0.16.5",
-    "posthtml-expressions": "^1.9.0",
-    "posthtml-insert-at": "^0.2.7",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
     "commander": "^8.3.0",
     "htmlnano": "^2.0.0",
+    "posthtml": "^0.16.5",
+    "posthtml-expressions": "^1.9.0",
+    "posthtml-insert-at": "^0.2.7",
+    "juice": "^8.0.0",
     "maestro-ui": "^0.3.1",
     "sass": "^1.49.0"
   }
