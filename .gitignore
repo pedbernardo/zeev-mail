@@ -72,6 +72,7 @@ typings/
 # Playground and Compiled Folders
 playground
 compiled
+cli_compiled
 
 # Todo
 todo*.md
