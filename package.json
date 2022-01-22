@@ -1,6 +1,6 @@
 {
   "name": "zeev-mail",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Non official Zeev BPMS component library and CLI bundler for e-mails (Message Events)",
   "main": "lib/compiler.js",
   "bin": {
