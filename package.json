@@ -9,11 +9,10 @@
     "dev:mail": "node lib/local-build/builder.js",
     "dev:css": "sass styles/main.scss dist/zeev-mail.css --style=compressed --watch",
     "play": "node bin/index.js playground/*.html sample -d -o cli_compiled",
-    "clean": "rimraf dist compiled",
-    "prebuild": "npm clean",
-    "build": "npm build:css",
-    "build:css": "sass styles/main.scss dist/zeev-mail.css --style=compressed",
-    "lint": "eslint src/**/*.js --max-warnings=0 --fix",
+    "clean": "rimraf dist compiled cli_compiled",
+    "prebuild": "npm run clean",
+    "build": "sass styles/main.scss dist/zeev-mail.css --style=compressed",
+    "lint": "eslint . --max-warnings=0 --fix",
     "prepare": "husky install"
   },
   "lint-staged": {
