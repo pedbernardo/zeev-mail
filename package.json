@@ -8,7 +8,7 @@
     "dev:clean": "rimraf compiled/*.*",
     "dev:mail": "node lib/local-build/builder.js",
     "dev:css": "sass styles/main.scss dist/zeev-mail.css --style=compressed --watch",
-    "play": "node bin/index.js playground/*.html sample -d -o cli_compiled",
+    "play": "node bin/index.js playground/*.html sample -d -o cli_compiled -s styles/external.scss",
     "clean": "rimraf dist compiled cli_compiled",
     "prebuild": "npm run clean",
     "build": "sass styles/main.scss dist/zeev-mail.css --style=compressed",
