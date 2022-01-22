@@ -3,6 +3,9 @@
   "version": "0.2.0",
   "description": "Non official Zeev BPMS component library and CLI bundler for e-mails (Message Events)",
   "main": "lib/compiler.js",
+  "bin": {
+    "zeev-mail": "./bin/index.js"
+  },
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
     "dev:clean": "rimraf compiled/*.*",
