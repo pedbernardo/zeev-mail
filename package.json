@@ -5,10 +5,12 @@
   "main": "dist/zeev-mail.esm.js",
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
+    "dev:clean": "rimraf compiled/*.*",
     "dev:mail": "node lib/local-build/builder.js",
     "dev:css": "sass styles/main.scss dist/zeev-mail.css --style=compressed --watch",
-    "play": "node build.js",
-    "prebuild": "rimraf dist",
+    "play": "node bin/index.js playground/*.html sample -d -o cli_compiled",
+    "clean": "rimraf dist compiled",
+    "prebuild": "npm clean",
     "build": "npm build:css",
     "build:css": "sass styles/main.scss dist/zeev-mail.css --style=compressed",
     "lint": "eslint src/**/*.js --max-warnings=0 --fix",
@@ -39,7 +41,6 @@
     "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
     "@types/jest": "^27.4.0",
-    "chokidar": "^3.5.3",
     "eslint": "7.12.1",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "2.22.1",
@@ -53,13 +54,16 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
+    "chokidar": "^3.5.3",
+    "colors": "^1.4.0",
     "commander": "^8.3.0",
+    "glob": "^7.2.0",
     "htmlnano": "^2.0.0",
+    "juice": "^8.0.0",
+    "maestro-ui": "^0.3.1",
     "posthtml": "^0.16.5",
     "posthtml-expressions": "^1.9.0",
     "posthtml-insert-at": "^0.2.7",
-    "juice": "^8.0.0",
-    "maestro-ui": "^0.3.1",
     "sass": "^1.49.0"
   }
 }
