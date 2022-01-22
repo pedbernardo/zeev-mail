@@ -2,7 +2,7 @@
   "name": "zeev-mail",
   "version": "0.1.0",
   "description": "Non official Zeev BPMS component library and CLI bundler for e-mails (Message Events)",
-  "main": "dist/zeev-mail.esm.js",
+  "main": "lib/compiler.js",
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
     "dev:clean": "rimraf compiled/*.*",
