@@ -6,22 +6,50 @@
   text-align: left;
   color: $color-grey-700;
 
-  th {
-    font-weight: 700;
-    color: $color-grey-600;
-    font-size: 11px;
-    text-transform: uppercase;
-    border-bottom: 1px solid $color-grey-300;
-  }
-
-  td,
-  th {
-    padding: 8px 14px;
-  }
-
   &.-zebra {
     tbody tr:nth-child(even) td {
       background-color: $color-grey-100;
+    }
+  }
+
+  &:not(.-panel) {
+    th {
+      font-weight: 700;
+      color: $color-grey-600;
+      font-size: 10px;
+      text-transform: uppercase;
+      border-bottom: 1px solid $color-grey-300;
+    }
+
+    td,
+    th {
+      padding: 8px 14px;
+    }
+  }
+
+  &.-panel {
+    color: $color-grey-600;
+
+    thead tr {
+      border-bottom: 1px solid $color-grey-200;
+    }
+
+    th {
+      font-size: $font-sm;
+      color: $color-grey-500;
+      text-transform: uppercase;
+      letter-spacing: 0.25px;
+      font-weight: $font-medium;
+      background-color: $color-grey-100;
+      padding: 8px 16px;
+    }
+
+    tbody tr:not(:last-child) {
+      border-bottom: 1px solid $color-grey-200;
+    }
+
+    td {
+      padding: 18px 16px;
     }
   }
 }
