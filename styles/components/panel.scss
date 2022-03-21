@@ -1,0 +1,12 @@
+.mail-panel {
+  display: table;
+  border: 1px solid $color-grey-200;
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 100%;
+
+  &.-padded {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
