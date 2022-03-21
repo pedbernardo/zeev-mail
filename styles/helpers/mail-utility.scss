@@ -6,6 +6,10 @@
   }
 }
 
+.u-inline-block {
+  display: inline-block !important;
+}
+
 .u-border {
   border: $border-grey-light;
 }
@@ -25,3 +29,40 @@
 .u-border-bottom {
   border-bottom: $border-grey-light;
 }
+
+.u-line-height-1 {
+  line-height: 1;
+}
+
+.u-line-height-1-25 {
+  line-height: 1.25;
+}
+
+.u-line-height-1-5 {
+  line-height: 1.5;
+}
+
+.u-line-height-2 {
+  line-height: 2;
+}
+
+.u-nowrap {
+  white-space: nowrap;
+}
+
+.u-ellipsis {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 148px;
+}
+
+.u-float-left {
+  float: left;
+}
+
+.u-float-right {
+  float: right;
+}
+
