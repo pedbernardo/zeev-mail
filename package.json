@@ -34,7 +34,7 @@
     "message"
   ],
   "author": "Pedro Bernardo <pedrovbernardo@gmail.com>",
-  "license": "LGPL-3.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/pedbernardo/zeev-mail/issues"
   },
